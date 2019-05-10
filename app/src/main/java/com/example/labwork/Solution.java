@@ -2,10 +2,10 @@ package com.example.labwork;
 
 public class Solution {
 
-    private Double R;
+    private int R;
 
-    Solution(double R) {
-        this.R = R;
+    Solution(String strR) {
+        R = Integer.parseInt(strR);
     }
 
     public double GetSolution() {
