@@ -55,13 +55,13 @@
                 />
 
             <LinearLayout
-
+                android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="155dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:text="Введите R: "
 
@@ -69,10 +69,11 @@
 
                 <EditText
                     android:id="@+id/R"
-                    android:layout_width="50dp"
+                    android:layout_width="55dp"
                     android:layout_height="wrap_content"
                     android:textSize="25sp"
                     android:inputType="numberSigned"
+                    android:maxLength="3"
                     />
 
 
@@ -84,10 +85,26 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="30dp">
                 
-                <TextView
-                    android:layout_width="25dp"
+                <ImageView
+                    android:src="@drawable/img1"
+                    android:layout_width="35dp"
                     android:layout_height="25dp"
-                    android:text="R/2"/>
+                    android:layout_marginStart="80dp"
+                    />
+
+                <ImageView
+                    android:src="@drawable/img2"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="35dp"
+                    />
+
+                <ImageView
+                    android:src="@drawable/img3"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    />
 
             </LinearLayout>
 
@@ -106,7 +123,7 @@
 
                 <TextView
                     android:layout_height="50dp"
-                    android:layout_width="40dp"
+                    android:layout_width="45dp"
                     android:text="dx"
                     android:textSize="35sp">
                 </TextView>
@@ -140,6 +157,41 @@
             </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:src="@drawable/img4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:src="@drawable/img5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <ImageView
+                android:src="@drawable/img6"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="55dp"
+                />
+
+
+        </LinearLayout>
+
+
             <Button
                 android:id="@+id/Solve"
                 android:layout_width="wrap_content"
@@ -151,17 +203,28 @@
                 />
 
            <LinearLayout
+               android:id="@+id/layout"
                android:orientation="horizontal"
                android:layout_marginTop="25dp"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:visibility="invisible">
+               android:visibility="invisible"
+               >
 
                <TextView
                    android:text="Ответ:"
                    android:textSize="35sp"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/answer"
+                   android:layout_marginStart="25dp"
+                   android:textSize="35sp"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"/>
+
+
 
            </LinearLayout>
 
